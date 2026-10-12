@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 # Runs once after the codespace container is created.
+# Custom setup for the Codespaces Skills exercise.
 set -e
 
 echo "Setting up the codespace..."
 
-# Install sl (the steam locomotive) to prove the postCreate script ran
+# Step 3 requirement: install sl (the steam locomotive)
+# so we can prove the postCreateCommand actually ran.
 sudo apt-get update -y
 sudo apt-get install -y sl
 
